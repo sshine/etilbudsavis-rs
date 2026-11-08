@@ -54,6 +54,7 @@
             text = ''echo "${aarch64-linker}"'';
           }
         );
+        meta.description = "Print the aarch64 musl cross linker used by release builds";
       };
     };
 }

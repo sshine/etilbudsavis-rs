@@ -21,10 +21,12 @@
       apps.etilbudsavis-cli = {
         type = "app";
         program = lib.getExe packages.etilbudsavis-cli;
+        meta.description = "Query eTilbudsavis offers, catalogues, stores, and lists";
       };
       apps.etilbudsavis-mcp = {
         type = "app";
         program = lib.getExe packages.etilbudsavis-mcp;
+        meta.description = "Serve eTilbudsavis to an MCP client over stdio";
       };
       apps.default = apps.etilbudsavis-cli;
     };

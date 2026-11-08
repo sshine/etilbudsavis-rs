@@ -73,4 +73,4 @@ The workflow is the nine-phase loop in the `android-app-reverser` skill:
 6. CLI (complete)
 7. Integration testing (complete)
 8. Advanced features (none requested; MCP server is included)
-9. Security and cleanup (in progress)
+9. Security and cleanup (complete; v0.1.0 released)

@@ -1,6 +1,6 @@
 # PRD: eTilbudsavis Android app → Rust client, CLI, and MCP server
 
-**Status:** Phase 7 complete; release and security cleanup in progress
+**Status:** Complete; v0.1.0 released with static Linux binaries
 **Last updated:** 2026-11-08
 
 ## 1. Summary
@@ -73,7 +73,7 @@ bundle is under `assets/public/assets/`.
 | M6 | CLI: clap subcommands, human and `--json` output | `just showcase` runs against the live service | Done |
 | M7 | Integration testing: wiremock, fixtures, live tests | `just test` and `just live-test` pass | Done |
 | M8 | MCP server: read tools plus tiered writes | Tool surface tests pass | Done |
-| M9 | Security and cleanup: PII scan, README, LICENSE, release | `just ci`; GitHub Release verified | In progress |
+| M9 | Security and cleanup: PII scan, README, LICENSE, release | `just ci`; GitHub Release verified | Done |
 
 ## 6. Constraints and decisions
 
