@@ -1,0 +1,43 @@
+# Reverse-engineering inputs and generated output
+#
+# The APK, extracted splits, decompiled sources, and captured responses are all
+# reproducible from the package name and version. None of them belong in git.
+/apk/
+/re/decompiled/
+/re/extracted/
+/re/reports/
+/re/analysis/*.pretty.js
+/re/analysis/*.ndjson
+/re/analysis/*.txt
+/secrets/
+
+*.apk
+*.xapk
+*.apks
+*.apkm
+*.har
+*.pcap
+
+# Rust
+/target/
+/dist/
+
+# Nix
+/.direnv/
+/result
+/hk.pkl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+\#*\#
+.*.swp

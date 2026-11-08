@@ -1,0 +1,39 @@
+[package]
+name = "etilbudsavis-mcp"
+version.workspace = true
+edition.workspace = true
+rust-version = "1.90"
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "MCP server for eTilbudsavis / Tjek"
+keywords = ["etilbudsavis", "tjek", "mcp", "denmark", "offers"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "etilbudsavis-mcp"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+clap = { workspace = true, features = ["derive", "env", "wrap_help"] }
+chrono = { workspace = true, features = ["clock", "std"] }
+directories = { workspace = true }
+etilbudsavis-api = { workspace = true }
+rmcp = { workspace = true, features = ["transport-io"] }
+schemars = { workspace = true }
+serde = { workspace = true, features = ["derive"] }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true, features = ["env-filter"] }
+
+[dev-dependencies]
+base64 = { workspace = true }
+rmcp = { workspace = true, features = ["client"] }
+tokio = { workspace = true, features = ["io-util", "test-util"] }
+wiremock = { workspace = true }
+url = { workspace = true }

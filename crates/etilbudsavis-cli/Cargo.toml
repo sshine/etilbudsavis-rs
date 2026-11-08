@@ -1,0 +1,35 @@
+[package]
+name = "etilbudsavis-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Command-line client for eTilbudsavis / Tjek"
+keywords = ["etilbudsavis", "tjek", "cli", "denmark", "offers"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "etilbudsavis"
+path = "src/main.rs"
+
+[lints]
+workspace = true
+
+[dependencies]
+anyhow = { workspace = true }
+chrono = { workspace = true, features = ["clock", "std"] }
+clap = { workspace = true, features = ["derive", "env", "wrap_help"] }
+etilbudsavis-api = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread"] }
+uuid = { workspace = true }
+
+[dev-dependencies]
+assert_cmd = "2"
+base64 = { workspace = true }
+predicates = "3"
+tempfile = { workspace = true }
+wiremock = { workspace = true }
